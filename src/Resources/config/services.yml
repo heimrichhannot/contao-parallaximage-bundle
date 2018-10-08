@@ -1,0 +1,6 @@
+services:
+  huh.parallaximage.listener.hooks:
+    class: HeimrichHannot\ContaoParallaxImageBundle\EventListener\HookListener
+    public: true
+    arguments:
+      ['@twig', '@huh.utils.image']
