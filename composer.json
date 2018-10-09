@@ -5,7 +5,8 @@
   "license": "LGPL-3.0-or-later",
   "require": {
     "php": "^7.1",
-    "contao/manager-bundle": "^4.4"
+    "contao/manager-bundle": "^4.4",
+    "heimrichhannot/contao-utils-bundle": "^2.30"
   },
   "require-dev": {
     "contao/test-case": "^1.1",
@@ -38,11 +39,9 @@
       "HeimrichHannot\\ContaoParallaxImageBundle\\Test\\": "tests/"
     }
   },
-  "config": {
-    "preferred-install": "dist"
-  },
   "prefer-stable": true,
   "extra": {
-    "contao-manager-plugin": "HeimrichHannot\\ContaoParallaxImageBundle\\ContaoManager\\Plugin"
+    "contao-manager-plugin": "HeimrichHannot\\ContaoParallaxImageBundle\\ContaoManager\\Plugin",
+    "foxy": true
   }
 }

@@ -1,0 +1,4 @@
+huh_encore:
+  encore:
+    entries:
+      - { name: "ContaoParallaxImageBundle", requiresCss: true, file: "vendor/heimrichhannot/contao-parallaximage-bundle/src/Resources/assets/js/contaoParallaxImageBundle.es6.js"}

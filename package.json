@@ -1,0 +1,11 @@
+{
+  "name": "contao-parallaximage-bundle",
+  "version": "0.1",
+  "description": "A bundle to add parallax background images to articles.",
+  "repository": "git@github.com:heimrichhannot/contao-parallaximage-bundle.git",
+  "author": "Heimrich & Hannot GmbH <digitales@heimrich-hannot.de>",
+  "license": "MIT",
+  "require": {
+    "rellax": "^1.7.0"
+  }
+}
