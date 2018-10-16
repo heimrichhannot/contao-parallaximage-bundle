@@ -19,6 +19,7 @@ composer require heimrichhannot/contao-parallaximage-bundle
 
 * You need to update the database after composer installation
 * If you don't use [Foxy](https://github.com/heimrichhannot/contao-encore-bundle/blob/master/docs/introductions/bundles_with_webpack.md), add rellax to your bundle package.json
+* Activate ContaParallaxImageBundle entry within encore section in your page structure for the pages, where you want parallax effect or in your page root.  
 
 ### Add parallax image
 
