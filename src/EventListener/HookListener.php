@@ -46,7 +46,7 @@ class HookListener
 	 */
 	public function onCompileArticle($template, $data, $module)
 	{
-		// Add an parallax background image
+		// Add parallax background image to article template
 		if ($template->addParallaxImage && $template->parallaxImageSingleSRC != '') {
 			$objModel = FilesModel::findByUuid($template->parallaxImageSingleSRC);
 			if ($objModel !== null && is_file(TL_ROOT . '/' . $objModel->path))
@@ -73,6 +73,21 @@ class HookListener
 
 				$template->imageData = $imageData;
 				$template->imageElement = $imageElement;
+			}
+		}
+	}
+
+	/**
+	 * Change article template, if parallax effect should be added.
+	 *
+	 * @param BackendTemplate|FrontendTemplate $template
+	 */
+	public function onParseTemplate($template)
+	{
+		// Only change template if default template
+		if ($template->type == 'article' && $template->getName() == 'mod_article') {
+			if ($template->addParallaxImage) {
+				$template->setName('mod_article_huh_parallaximage');
 			}
 		}
 	}
