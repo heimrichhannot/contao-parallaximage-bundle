@@ -1,0 +1,23 @@
+.parallax-background {
+  position: relative;
+}
+
+.parallax-background .parallax-image {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.parallax-background .parallax-image img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.parallax-background .inside {
+  position: relative;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi92ZW5kb3IvaGVpbXJpY2hoYW5ub3QvY29udGFvLXBhcmFsbGF4aW1hZ2UtYnVuZGxlL3NyYy9SZXNvdXJjZXMvYXNzZXRzL3Njc3MvY29udGFvUGFyYWxsYXhJbWFnZUJ1bmRsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7Q0FDRDs7QUFGRDtFQUlJO0VBQ0E7RUFDQTtFQUNBO0NBRUg7O0FBVEQ7RUFVTTtFQUNBO0VBQ0E7Q0FHTDs7QUFmRDtFQWlCSTtDQUVIIiwiZmlsZSI6IkNvbnRhb1BhcmFsbGF4SW1hZ2VCdW5kbGUuMDIwZjFhMmYuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBhcmFsbGF4LWJhY2tncm91bmQge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG5cbiAgLnBhcmFsbGF4LWltYWdlIHtcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDEwMCU7XG5cbiAgICBpbWcge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgdG9wOiAwO1xuICAgICAgd2lkdGg6IDEwMCU7XG4gICAgfVxuICB9XG5cbiAgLmluc2lkZSB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB9XG59XG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIC4vdmVuZG9yL2hlaW1yaWNoaGFubm90L2NvbnRhby1wYXJhbGxheGltYWdlLWJ1bmRsZS9zcmMvUmVzb3VyY2VzL2Fzc2V0cy9zY3NzL2NvbnRhb1BhcmFsbGF4SW1hZ2VCdW5kbGUuc2NzcyJdLCJzb3VyY2VSb290IjoiIn0=*/

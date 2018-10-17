@@ -54,6 +54,7 @@ class HookListener
 
 				$templateData = $data;
 				$templateData['parallaxImageSingleSRC'] = $objModel->path;
+				$templateData['size'] = $module->parallaxImageSize;
 				$imageData = [];
 				$this->imageUtil->addToTemplateData('parallaxImageSingleSRC', 'addParallaxImage', $imageData, $templateData);
 
