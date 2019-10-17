@@ -1,0 +1,12 @@
+{
+  "entrypoints": {
+    "contao-parallaximage-bundle": {
+      "css": [
+        "/bundles/heimrichhannotcontaoparallaximage/contao-parallaximage-bundle.css"
+      ],
+      "js": [
+        "/bundles/heimrichhannotcontaoparallaximage/contao-parallaximage-bundle.js"
+      ]
+    }
+  }
+}

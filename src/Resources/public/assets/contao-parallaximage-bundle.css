@@ -1,0 +1,16 @@
+.parallax-background {
+  position: relative; }
+  .parallax-background .parallax-image {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    .parallax-background .parallax-image img {
+      position: absolute;
+      top: 0;
+      width: 100%; }
+  .parallax-background .inside {
+    position: relative; }
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vY29udGFvLXBhcmFsbGF4aW1hZ2UtYnVuZGxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBa0I7RUFEcEI7SUFJSSxnQkFBZ0I7SUFDaEIsa0JBQWtCO0lBQ2xCLFdBQVc7SUFDWCxZQUFZO0lBUGhCO01BVU0sa0JBQWtCO01BQ2xCLE1BQU07TUFDTixXQUFXO0VBWmpCO0lBaUJJLGtCQUFrQiIsImZpbGUiOiJjb250YW8tcGFyYWxsYXhpbWFnZS1idW5kbGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBhcmFsbGF4LWJhY2tncm91bmQge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG5cbiAgLnBhcmFsbGF4LWltYWdlIHtcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDEwMCU7XG5cbiAgICBpbWcge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgdG9wOiAwO1xuICAgICAgd2lkdGg6IDEwMCU7XG4gICAgfVxuICB9XG5cbiAgLmluc2lkZSB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB9XG59Il0sInNvdXJjZVJvb3QiOiIifQ==*/

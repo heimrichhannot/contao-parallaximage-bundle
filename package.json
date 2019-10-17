@@ -6,6 +6,22 @@
   "author": "Heimrich & Hannot GmbH <digitales@heimrich-hannot.de>",
   "license": "MIT",
   "dependencies": {
-    "rellax": "^1.7.0"
+    "simple-parallax-js": "^5.1.0"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.28.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "autoprefixer": "^9.1.5"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "jshintConfig": {
+    "esversion": 6,
+    "curly": true
   }
 }

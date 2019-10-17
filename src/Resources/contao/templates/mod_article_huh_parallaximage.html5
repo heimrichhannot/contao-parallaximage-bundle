@@ -1,4 +1,3 @@
-
 <?php if ($this->teaserOnly): ?>
 
   <?php $this->block('alias'); ?>

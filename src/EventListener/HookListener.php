@@ -19,24 +19,36 @@ use Contao\FrontendTemplate;
 use Contao\Image;
 use Contao\ModuleArticle;
 use Contao\StringUtil;
+use HeimrichHannot\ContaoParallaxImageBundle\Asset\FrontendAsset;
 use HeimrichHannot\UtilsBundle\Image\ImageUtil;
+use Twig\Environment;
 
 class HookListener
 {
 	/**
-	 * @var \Twig_Environment
+	 * @var Environment
 	 */
 	private $twig;
 	/**
 	 * @var ImageUtil
 	 */
 	private $imageUtil;
+    /**
+     * @var FrontendAsset
+     */
+    private $frontendAsset;
 
-	public function __construct(\Twig_Environment $twig, ImageUtil $imageUtil)
+    /**
+     * @var FrontendTemplate
+     */
+    protected $articleTemplate;
+
+    public function __construct(Environment $twig, ImageUtil $imageUtil, FrontendAsset $frontendAsset)
 	{
 		$this->twig = $twig;
 		$this->imageUtil = $imageUtil;
-	}
+        $this->frontendAsset = $frontendAsset;
+    }
 
 
 	/**
@@ -51,7 +63,7 @@ class HookListener
 			$objModel = FilesModel::findByUuid($template->parallaxImageSingleSRC);
 			if ($objModel !== null && is_file(TL_ROOT . '/' . $objModel->path))
 			{
-
+			    $this->frontendAsset->addFrontendAssets();
 				$templateData = $data;
 				$templateData['parallaxImageSingleSRC'] = $objModel->path;
 				$templateData['size'] = $module->parallaxImageSize;
