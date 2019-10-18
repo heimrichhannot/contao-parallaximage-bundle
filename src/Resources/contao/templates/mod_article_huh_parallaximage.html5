@@ -12,8 +12,6 @@
 </div>
 <div class="parallax-content">
     <?php $this->parent(); ?>
-
-
     <?php if (!$this->backlink): ?>
 </div>
 <?php endif; ?>
