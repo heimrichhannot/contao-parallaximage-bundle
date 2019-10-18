@@ -6,6 +6,6 @@
   "author": "Heimrich & Hannot GmbH <digitales@heimrich-hannot.de>",
   "license": "MIT",
   "dependencies": {
-    "rellax": "^1.7.0"
+    "rellax": "1.7 - 1.9"
   }
 }
