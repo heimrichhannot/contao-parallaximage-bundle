@@ -12,12 +12,17 @@ class ContaoParallaxBundle
             return;
         }
         let config = {
-            scale: 1.1,
+            scale: 1.3,
             overflow: true,
-            orientation: 'up'
         };
         config = ContaoParallaxBundle.polyfillIE(config);
-        new simpleParallax(image, config);
+        let parallax = new simpleParallax(image, config);
+        parallax.elements.forEach((element) => {
+            let transform3dValues = element.style.transform.split(/\w+\(|\);?/)[1].split(/,\s?/g);
+            element.style.marginTop = '-' + (transform3dValues[1]);
+
+            // console.log(transform3dValues);
+        })
     }
 
     static polyfillIE(parallaxConfig)
