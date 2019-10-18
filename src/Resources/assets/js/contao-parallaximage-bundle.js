@@ -1,4 +1,4 @@
-import '../../assets/scss/contaoParallaxImageBundle.scss';
+import '../../assets/scss/contao-parallaximage-bundle.scss';
 
 let Rellax = require('rellax');
 
