@@ -44,9 +44,9 @@ class FrontendAsset
         if ($this->container->has('huh.encore.asset.frontend')) {
             $this->container->get('huh.encore.asset.frontend')->addActiveEntrypoint('contao-parallaximage-bundle');
         }
-//        $GLOBALS['TL_JAVASCRIPT']['huh.contao-parallaximage-bundle'] =
-//            '/bundles/heimrichhannotcontaoparallaximage/contao-parallaximage-bundle.js|static';
-//        $GLOBALS['TL_CSS']['huh.contao-parallaximage-bundle']        =
-//            '/bundles/heimrichhannotcontaoparallaximage/contao-parallaximage-bundle.css|static';
+        $GLOBALS['TL_JAVASCRIPT']['huh.contao-parallaximage-bundle'] =
+            '/bundles/heimrichhannotcontaoparallaximage/contao-parallaximage-bundle.js|static';
+        $GLOBALS['TL_CSS']['huh.contao-parallaximage-bundle']        =
+            '/bundles/heimrichhannotcontaoparallaximage/contao-parallaximage-bundle.css|static';
     }
 }

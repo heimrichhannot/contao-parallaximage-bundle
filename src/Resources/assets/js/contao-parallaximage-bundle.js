@@ -11,7 +11,11 @@ class ContaoParallaxBundle
         if (image.count < 1) {
             return;
         }
-        let config = {};
+        let config = {
+            scale: 1.1,
+            overflow: true,
+            orientation: 'up'
+        };
         config = ContaoParallaxBundle.polyfillIE(config);
         new simpleParallax(image, config);
     }
@@ -32,7 +36,6 @@ class ContaoParallaxBundle
         if (!Element.prototype.closest) {
             Element.prototype.closest = function(s) {
                 var el = this;
-
                 do
                 {
                     if (el.matches(s))
@@ -44,6 +47,7 @@ class ContaoParallaxBundle
                 return null;
             };
         }
+        return parallaxConfig;
     }
 }
 

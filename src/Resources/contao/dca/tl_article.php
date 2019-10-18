@@ -37,7 +37,7 @@ $dca['fields']['parallaxImageSize']         = [
 	},
 	'sql'              => "varchar(64) NOT NULL default ''"
 ];
-$dca['fields']['parallaxImageSpeed']         = [
+$dca['fields']['parallaxImageScale']         = [
 	'label'            => &$GLOBALS['TL_LANG']['tl_article']['parallaxImageSpeed'],
 	'exclude'          => true,
 	'inputType'        => 'text',
