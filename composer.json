@@ -4,7 +4,7 @@
   "description": "A bundle to add parallax background images to articles.",
   "license": "LGPL-3.0-or-later",
   "require": {
-    "php": "^7.1",
+    "php": "^7.1 || ^8.0",
     "contao/manager-bundle": "^4.4",
     "heimrichhannot/contao-utils-bundle": "^2.30"
   },
@@ -22,7 +22,6 @@
       "src/Resources/contao/templates/"
     ]
   },
-  "prefer-stable": true,
   "extra": {
     "contao-manager-plugin": "HeimrichHannot\\ContaoParallaxImageBundle\\ContaoManager\\Plugin",
     "foxy": true

@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [0.3.1] - 2022-05-25
+- Changed: allow php 8
+- Changed: added missing license file
+
 ## [0.3.0] - 2019-10-18
 
 ### Changed
