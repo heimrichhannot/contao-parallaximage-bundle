@@ -12,7 +12,7 @@ namespace HeimrichHannot\ContaoParallaxImageBundle\Asset;
 
 use HeimrichHannot\EncoreContracts\EncoreEntry;
 use HeimrichHannot\EncoreContracts\EncoreExtensionInterface;
-use HeimrichHannot\ContaoParallaxImage\ContaoParallaxImageBundle;
+use HeimrichHannot\ContaoParallaxImageBundle\ContaoParallaxImageBundle;
 
 class EncoreExtension implements EncoreExtensionInterface
 {
@@ -24,15 +24,14 @@ class EncoreExtension implements EncoreExtensionInterface
     public function getEntries(): array
     {
         return [
-            // this will generate an entrypoint called "main-theme"
-            EncoreEntry::create('contao-parallaximage-bundle', 'src/Resources/assets/js/contao-parallaximage-bundle.js')
+            EncoreEntry::create(
+                'contao-parallaximage-bundle',
+                'src/Resources/assets/js/contao-parallaximage-bundle.js'
+            )
                 ->setRequiresCss(true)
-                // false by default, so this loads at the bottom of the page
                 ->setIsHeadScript(false)
-                ->addJsEntryToRemoveFromGlobals('huh.contao-parallaximage-bundle')
-                ->addCssEntryToRemoveFromGlobals('huh.contao-parallaximage-bundle')
-                ->addJsEntryToRemoveFromGlobals('huh.contao-parallaximage-bundle')
-            ,
+                ->addJsEntryToRemoveFromGlobals('contao-parallaximage-bundle')
+                ->addCssEntryToRemoveFromGlobals('contao-parallaximage-bundle'),
         ];
     }
 }
