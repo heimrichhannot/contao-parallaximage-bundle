@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## ## [0.4.0] - 2025-06-23
+- Changed: removed foxy
+
 ## [0.3.1] - 2022-05-25
 - Changed: allow php 8
 - Changed: added missing license file

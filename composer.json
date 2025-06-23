@@ -23,7 +23,6 @@
     ]
   },
   "extra": {
-    "contao-manager-plugin": "HeimrichHannot\\ContaoParallaxImageBundle\\ContaoManager\\Plugin",
-    "foxy": true
+    "contao-manager-plugin": "HeimrichHannot\\ContaoParallaxImageBundle\\ContaoManager\\Plugin"
   }
 }
