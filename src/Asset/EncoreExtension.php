@@ -12,13 +12,14 @@ namespace HeimrichHannot\ContaoParallaxImageBundle\Asset;
 
 use HeimrichHannot\EncoreContracts\EncoreEntry;
 use HeimrichHannot\EncoreContracts\EncoreExtensionInterface;
-use HeimrichHannot\ContaoParallaxImageBundle\ContaoParallaxImageBundle;
+use HeimrichHannot\ContaoParallaxImageBundle\HeimrichHannotContaoParallaxImageBundle;
 
 class EncoreExtension implements EncoreExtensionInterface
 {
     public function getBundle(): string
     {
-        return ContaoParallaxImageBundle::class;
+        // Return your bundle’s main class
+        return HeimrichHannotContaoParallaxImageBundle::class;
     }
 
     public function getEntries(): array
