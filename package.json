@@ -8,12 +8,16 @@
   "dependencies": {
     "rellax": "1.9.*"
   },
-"devDependencies": {
-    "@symfony/webpack-encore": "^0.28.0",
-    "node-sass": "^4.12.0",
-    "postcss-loader": "^3.0.0",
-    "sass-loader": "^7.1.0",
-    "autoprefixer": "^9.1.5"
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@symfony/webpack-encore": "^4",
+    "autoprefixer": "^9.1.5",
+    "postcss-loader": "^7.0.0",
+    "sass": "^1.89",
+    "sass-loader": "^13.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
   },
   "postcss": {
     "plugins": {
