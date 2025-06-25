@@ -30,7 +30,7 @@ class CompileArticleListener implements ServiceSubscriberInterface
 
         $figureBuilder = $this->studio->createFigureBuilder()
             ->from($template->parallaxImageSingleSRC)
-            ->setSize($module->parallaxImageSize);
+            ->setSize($module->getModel()->parallaxImageSize);
 
         $options = [];
 
