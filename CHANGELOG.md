@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.0] - 2025-06-25
+- Added: contao 5 support
+- Changed: completely refactored
+- Changed: mod_article_huh_parallaximage template
+
 ## [0.4.0] - 2025-06-23
 - Changed: removed foxy
 
