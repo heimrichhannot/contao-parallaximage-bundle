@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Contao Open Source CMS
+ * Contao Open Source CMS.
  *
  * Copyright (c) 2018 Heimrich & Hannot GmbH
  *
@@ -8,9 +9,7 @@
  * @license http://www.gnu.org/licences/lgpl-3.0.html LGPL
  */
 
-
 namespace HeimrichHannot\ContaoParallaxImageBundle\ContaoManager;
-
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
@@ -23,24 +22,23 @@ use Symfony\Component\Config\Loader\LoaderInterface;
 
 class Plugin implements BundlePluginInterface, ConfigPluginInterface
 {
-
-	/**
-	 * Gets a list of autoload configurations for this bundle.
-	 *
-	 * @return ConfigInterface[]
-	 */
-	public function getBundles(ParserInterface $parser): array
+    /**
+     * Gets a list of autoload configurations for this bundle.
+     *
+     * @return ConfigInterface[]
+     */
+    public function getBundles(ParserInterface $parser): array
     {
-		return [
-			BundleConfig::create(HeimrichHannotContaoParallaxImageBundle::class)->setLoadAfter([ContaoCoreBundle::class]),
-		];
-	}
+        return [
+            BundleConfig::create(HeimrichHannotContaoParallaxImageBundle::class)->setLoadAfter([ContaoCoreBundle::class]),
+        ];
+    }
 
-	/**
-	 * Allows a plugin to load container configuration.
-	 */
-	public function registerContainerConfiguration(LoaderInterface $loader, array $managerConfig): void
+    /**
+     * Allows a plugin to load container configuration.
+     */
+    public function registerContainerConfiguration(LoaderInterface $loader, array $managerConfig): void
     {
-		$loader->load('@HeimrichHannotContaoParallaxImageBundle/config/services.yaml');
-	}
+        $loader->load('@HeimrichHannotContaoParallaxImageBundle/config/services.yaml');
+    }
 }
