@@ -37,7 +37,7 @@ class CompileArticleListener implements ServiceSubscriberInterface
         if ($template->parallaxImageSpeed) {
             $scrollSpeed = intval($template->parallaxImageSpeed);
             if ($scrollSpeed > -10 && $scrollSpeed < 10) {
-                $options['attr']['data-rellax-speed'] = $scrollSpeed;
+                $options['img_attr']['data-rellax-speed'] = $scrollSpeed;
             }
         }
         $figure = $figureBuilder
@@ -59,7 +59,7 @@ class CompileArticleListener implements ServiceSubscriberInterface
 
         $image = $this->twig->render('@ContaoCore/Image/Studio/figure.html.twig', ['figure' => $figure]);
 
-        $template->class = trim($template->class . ' parallax-background');
+        $module->getModel()->classes = array_merge($module->getModel()->classes ?? [], ['parallax-background']);
         $prepend = ['<div class="parallax-image">' . $image . '</div><div class="parallax-content">'];
         $append = ['</div>'];
 
