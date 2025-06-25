@@ -7,7 +7,7 @@ class ContaoParallaxBundle
     static init()
     {
         document.querySelectorAll('.parallax-background').forEach(function(element) {
-            let rellax = new Rellax('.parallax-image img', {
+            new Rellax('.parallax-image img', {
                 wrapper: element,
                 relativeToWrapper: true
             });

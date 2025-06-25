@@ -1,15 +1,19 @@
 <?php
-\Contao\System::loadLanguageFile('tl_content');
+
+use Contao\CoreBundle\DataContainer\PaletteManipulator;
+use Contao\System;
+
+System::loadLanguageFile('tl_content');
 
 $dca = &$GLOBALS['TL_DCA']['tl_article'];
 
 $dca['palettes']['__selector__'][] = 'addParallaxImage';
 
-$dca['palettes']['default'] = str_replace(
-	'{syndication_legend}',
-	'{parallaxImage_legend:hide},addParallaxImage;{syndication_legend}',
-	$dca['palettes']['default']
-);
+PaletteManipulator::create()
+    ->addLegend('parallaxImage_legend', 'syndication_legend', PaletteManipulator::POSITION_AFTER, true)
+    ->addField('addParallaxImage', 'parallaxImage_legend', PaletteManipulator::POSITION_APPEND)
+    ->applyToPalette('default', 'tl_article');
+
 $dca['subpalettes']['addParallaxImage'] = 'parallaxImageSingleSRC,parallaxImageSize,parallaxImageSpeed';
 
 $dca['fields']['addParallaxImage']       = [
@@ -32,9 +36,6 @@ $dca['fields']['parallaxImageSize']         = [
 	'inputType'        => 'imageSize',
 	'reference'        => &$GLOBALS['TL_LANG']['MSC'],
 	'eval'             => ['rgxp' => 'natural', 'includeBlankOption' => true, 'nospace' => true, 'helpwizard' => true, 'tl_class' => 'w50'],
-	'options_callback' => function () {
-		return System::getContainer()->get('contao.image.image_sizes')->getOptionsForUser(BackendUser::getInstance());
-	},
 	'sql'              => "varchar(64) NOT NULL default ''"
 ];
 $dca['fields']['parallaxImageSpeed']         = [
