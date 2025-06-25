@@ -1,0 +1,4 @@
+services:
+  HeimrichHannot\ContaoParallaxImageBundle\EventListener\CompileArticleListener:
+    autowire: true
+    autoconfigure: true

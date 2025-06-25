@@ -3,10 +3,5 @@ services:
   HeimrichHannot\ContaoParallaxImageBundle\Asset\EncoreExtension:
     autoconfigure: true
 
-  huh.parallaximage.listener.hooks:
-    class: HeimrichHannot\ContaoParallaxImageBundle\EventListener\HookListener
-    public: true
-    autowire: true
-
   HeimrichHannot\ContaoParallaxImageBundle\Asset\FrontendAsset:
     autowire: true
