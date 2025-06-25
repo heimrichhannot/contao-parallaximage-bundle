@@ -26,12 +26,12 @@ class FrontendAsset
      */
     private $containerUtil;
 
-    public function __construct(ContainerInterface $container, ContainerUtil $containerUtil)
-    {
-
-        $this->container = $container;
-        $this->containerUtil = $containerUtil;
-    }
+//    public function __construct(ContainerInterface $container, ContainerUtil $containerUtil)
+//    {
+//
+//        $this->container = $container;
+//        $this->containerUtil = $containerUtil;
+//    }
 
     /**
      * Setup the frontend assets needed for slick slider

@@ -1,4 +1,5 @@
 services:
-  HeimrichHannot\ContaoParallaxImageBundle\EventListener\CompileArticleListener:
+  HeimrichHannot\ContaoParallaxImageBundle\:
+    resource: '../src/{Asset,EventListener}/*'
     autowire: true
     autoconfigure: true

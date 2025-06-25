@@ -6,11 +6,16 @@ use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
 use Contao\CoreBundle\Image\Studio\Studio;
 use Contao\Module;
 use Contao\FrontendTemplate;
+use HeimrichHannot\EncoreContracts\PageAssetsTrait;
+use Psr\Container\ContainerInterface;
+use Symfony\Contracts\Service\ServiceSubscriberInterface;
 use Twig\Environment;
 
 #[AsHook('compileArticle')]
-class CompileArticleListener
+class CompileArticleListener implements ServiceSubscriberInterface
 {
+    use PageAssetsTrait;
+
     public function __construct(
         private readonly Studio $studio,
         private readonly Environment $twig,
@@ -43,6 +48,15 @@ class CompileArticleListener
         if (!$figure) {
             return;
         }
+
+        $this->addPageEntrypoint('contao-parallaximage-bundle', [
+            'TL_CSS' => [
+                'contao-parallaximage-bundle' => 'bundles/heimrichhannotcontaoparallaximage/assets/contao-parallaximage-bundle.css'
+            ],
+            'TL_JAVASCRIPT' => [
+                'contao-parallaximage-bundle' => 'bundles/heimrichhannotcontaoparallaximage/assets/contao-parallaximage-bundle.js'
+            ],
+        ]);
 
         $image = $this->twig->render('@ContaoCore/Image/Studio/figure.html.twig', ['figure' => $figure]);
 

@@ -25,10 +25,7 @@ class EncoreExtension implements EncoreExtensionInterface
     public function getEntries(): array
     {
         return [
-            EncoreEntry::create(
-                'contao-parallaximage-bundle',
-                'src/Resources/assets/js/contao-parallaximage-bundle.js'
-            )
+            EncoreEntry::create('contao-parallaximage-bundle', 'assets/js/contao-parallaximage-bundle.js')
                 ->setRequiresCss(true)
                 ->setIsHeadScript(false)
                 ->addJsEntryToRemoveFromGlobals('contao-parallaximage-bundle')
