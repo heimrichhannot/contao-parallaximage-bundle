@@ -1,7 +1,0 @@
-services:
-  # autoconfigure=true will pick up the EncoreExtensionInterface
-  HeimrichHannot\ContaoParallaxImageBundle\Asset\EncoreExtension:
-    autoconfigure: true
-
-  HeimrichHannot\ContaoParallaxImageBundle\Asset\FrontendAsset:
-    autowire: true

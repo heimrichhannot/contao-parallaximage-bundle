@@ -7,7 +7,6 @@ use Contao\CoreBundle\Image\Studio\Studio;
 use Contao\Module;
 use Contao\FrontendTemplate;
 use HeimrichHannot\EncoreContracts\PageAssetsTrait;
-use Psr\Container\ContainerInterface;
 use Symfony\Contracts\Service\ServiceSubscriberInterface;
 use Twig\Environment;
 
